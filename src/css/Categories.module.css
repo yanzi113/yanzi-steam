@@ -1,0 +1,31 @@
+.input {
+  /* max-width: 190px; */
+  background-color: #316282;
+  border: none;
+  padding: 0.2rem;
+  /* border-radius: 10px; */
+  outline: none;
+  color: rgb(21, 21, 21);
+}
+
+.input:focus {
+  animation: rotateShadow 2s infinite linear;
+}
+
+@keyframes rotateShadow {
+  0% {
+    box-shadow: -2px -2px 8px 1px #f0f2f3, 2px 2px 8px 1px #0066ff;
+  }
+  25% {
+    box-shadow: -2px 2px 8px 1px #f0f2f3, 2px -2px 8px 1px #0066ff;
+  }
+  50% {
+    box-shadow: 2px 2px 8px 1px #f0f2f3, -2px -2px 8px 1px #0066ff;
+  }
+  75% {
+    box-shadow: 2px -2px 8px 1px #f0f2f3, -2px 2px 8px 1px #0066ff;
+  }
+  100% {
+    box-shadow: -2px -2px 8px 1px #f0f2f3, 2px 2px 8px 1px #0066ff;
+  }
+}
